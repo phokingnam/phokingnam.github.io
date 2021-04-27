@@ -1,0 +1,327 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+hr {
+    width: 95vw;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+.top-news {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    background: black;
+    color: white;
+    padding: 20px 30px;
+}
+
+.navbar ul li:hover {
+    background: black;
+}
+
+.navbar ul li a {
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+.menu-container {
+    display: flex;
+    background: black;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.top-news {
+    flex: 0 0 15%;
+}
+
+.navbar {
+    flex: 1 0 auto;
+    height: 100%;
+    background: transparent;
+}
+
+.navbar nav ul {
+    display: flex;
+    justify-content: left;
+}
+
+.navbar nav ul li {
+    padding-right: 30px;
+}
+
+.profile {
+    color: white;
+}
+
+.newsbanner {
+    min-height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding: 30px 30px;
+    margin-top: 8px;
+}
+
+.newsbanner-sub {
+    padding: 20px 45px;
+}
+
+.newsbanner-content h2 {
+    font-size: 3rem;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+.newsbanner-content h3 {
+    padding: 1rem 0;
+}
+
+.latest-news {
+    background: white;
+    padding: 20px;
+    font-size: 12px;
+    margin: 20px 0;
+}
+
+.latest-news h3 {
+    padding: 10px 0;
+    position: relative;
+    left: 30px;
+}
+
+.latest-news span {
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.nearby-news img {
+    display: block;
+}
+
+.nearby-news h2 {
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.nearby-news p {
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+.nearby-news a {
+    display: block;
+    background: black;
+    color: white;
+    width: 85px;
+    border-radius: 2px;
+}
+
+
+/*testing here*/
+
+.databanner {
+    min-height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding: 30px 30px;
+    margin-top: 8px;
+}
+
+.databanner-content h2 {
+    font-size: 3rem;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+.latest-data {
+    background: white;
+    padding: 20px;
+    font-size: 12px;
+    margin: 20px 0;
+}
+
+.latest-data span {
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.nearby-data img {
+    display: block;
+}
+
+.nearby-data h2 {
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.nearby-data p {
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+.nearby-data a {
+    display: block;
+    background: black;
+    color: white;
+    width: 85px;
+    border-radius: 2px;
+}
+
+.hospitalbanner {
+    min-height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding: 30px 30px;
+    margin-top: 8px;
+}
+
+.hospitalbanner-content h2 {
+    font-size: 3rem;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+.nearby-hospital {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding: 12px;
+    height: 400px;
+}
+
+.nearby-hospital img {
+    display: block;
+}
+
+.nearby-hospital-content {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    line-height: 1.3;
+    color: white;
+}
+
+.latest-hospital {
+    position: relative;
+    top: 20px;
+}
+
+.latest-hospital p {
+    padding: 10px 0;
+    text-shadow: 0 0 2px black;
+    padding: 12px 10px;
+    position: relative;
+    right: 10px;
+}
+
+.nearby-hospital h2 {
+    padding: 10px 0;
+    font-size: 18px;
+    text-shadow: 0 0 2px black;
+}
+
+.nearby-hospital h3 {
+    padding: 10px 0;
+    font-size: 22px;
+    text-shadow: 0 0 2px black;
+    position: relative;
+    text-decoration: underline;
+    top: -30px;
+}
+
+.nearby-hospital p {
+    padding: 10px 0;
+    font-size: 15px;
+    text-shadow: 0 0 2px black;
+    padding: 12px 10px;
+}
+
+.locationbanner {
+    min-height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding: 30px 30px;
+    margin-top: 8px;
+}
+
+.locationbanner-content {
+    position: relative;
+    top: 5px;
+}
+
+.locationbanner-content h2 {
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+.vaccinationbanner {
+    min-height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding: 30px 30px;
+    margin-top: 8px;
+}
+
+.vaccinationbanner-content {
+    position: relative;
+    top: 5px;
+}
+
+.vaccinationbanner-content h2 {
+    font-size: 3rem;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+@media(min-width: 750px) {
+    .latest-data {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .latest-hospital {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .latest-location {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
