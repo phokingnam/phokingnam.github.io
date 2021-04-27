@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <title>COVID-19 Info</title>
+    <!-- Use mobile-aware viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="main.css">
+
+    <script src="script.js" async defer></script>
+
+
+
+    <!--testing google translator here-->
+    <style>
+        html,
+        /*body {
+            min-height: 0!important;
+            height: auto!important;
+            position: inherit!important;
+        }*/
+        
+        #google_translate_element {
+            position: relative;
+        }
+        
+        #google_translate_element span {
+            display: none!important;
+        }
+        
+        #google_translate_element:after {
+            content: "";
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: black;
+            position: absolute;
+            z-index: 1;
+            height: 40%;
+        }
+        
+        #google_translate_element select {
+            padding: 0.3vw;
+            position: relative;
+            right: 600px;
+            width: 200%;
+        }
+        
+        .goog-te-banner-frame.skiptranslate {
+            display: none!important;
+            visibility: hidden!important;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: "en"
+            }, "google_translate_element");
+        };
+    </script>
+
+    <script>
+        function newPage() {
+
+            document.querySelectorAll('.newsbanner')[0].style.visibility = 'hidden';
+
+
+
+        }
+
+        function homePage() {
+            document.querySelectorAll('.newsbanner')[0].style.visibility = 'visible';
+
+        }
+    </script>
+
+
+    <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+
+<body>
+    <header>
+        <div class="menu-container">
+            <div class="top-news">
+                <div class="covid-name">
+                    <h1>COVID-19 Info</h1>
+                </div>
+            </div>
+            <div class="navbar" id="navbar">
+                <nav>
+                    <ul>
+                        <li><a href="news.html">home</a></li>
+                        <li><a href="news.html">news</a></li>
+                        <li><a href="hospital.html">hospitals</a></li>
+                        <li><a href="data.html">data</a></li>
+                        <li><a href="location.html">essential locations</a></li>
+                    </ul>
+                </nav>
+
+
+            </div>
+            <div id="google_translate_element">
+
+            </div>
+
+            <div class="navbar-right">
+                <div class="profile">
+                    <div>Profile</div>
+                    <div>Sign Out</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="newsbanner">
+        <div class="newsbanner-content">
+            <h2>COVID-19 DATA</h2>
+
+            <div class="latest-news">
+                <h3>Coronavirus in Illinois updates: Chicago officials change city’s vaccine deployment strategy; Loretto Hospital to resume distributing vaccines; state reports 3,866 new cases and 21 more deaths<span> by Chicago Tribune</span></h3>
+            </div>
+        </div>
+        <div class="latest-data" style="visibility: visible;">
+            <div class="nearby-data">
+                <h2> COVID-19 cases </h2>
+                <img src="covidData.PNG" height=600 alt="">
+                <div class="nearby-data-content">
+
+                    <p>Public Health Officials Announce 2,137 New Cases of Coronavirus Disease in Illinois</p>
+                </div>
+            </div>
+            <div class="nearby-data">
+                <h2> Age Demographics </h2>
+                <img src="covidData2.PNG" height=600 alt="">
+                <div class="nearby-data-content">
+
+                    <p>There have been 1,318,998 total COVID cases, including 21,802 deaths in the state since the pandemic began.</p>
+                </div>
+            </div>
+    </section>
+
+    <!--<section class="databanner" style="visibility: visible;">
+        <div class="databanner-content">
+            <h2>COVID-19 DATA</h2>
+
+            <div class="latest-data">
+                <div class="nearby-data">
+                    <img src="covidData.PNG" alt="">
+                    <div class="nearby-data-content">
+                        <h2> COVID-19 cases </h2>
+                        <p>testing paragraph here</p>
+                    </div>
+
+
+                </div>
+                <div class="nearby-data">
+                    <img src="covidData2.PNG" alt="">
+                    <div class="nearby-data-content">
+                        <h2> Age Demographics </h2>
+                        <p>testing paragraph here2</p>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+        -->
+
+
+
+    </section>
+
+</body>
+
+</html>

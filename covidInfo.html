@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>COVID-19 Info</title>
+    <style type="text/css">
+        h1,
+        h2 {
+            text-align: center;
+        }
+        
+        .button-container {
+            width: 50%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            justify-items: stretch;
+            align-items: center;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateX(50%);
+        }
+        
+        body {
+            background-color: #fdfdfd;
+        }
+        
+        .languageButton {
+            padding: 20px 24px;
+            cursor: pointer;
+            text-align: center;
+            /*background-color: rgb(23, 3, 109);*/
+            background-color: #154b61;
+            color: #fff;
+        }
+        
+        .languageButton:hover {
+            background-color: #455961;
+        }
+        
+        .container-submit {
+            margin-top: 60px;
+            width: 25%;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            justify-items: stretch;
+            align-items: center;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateX(150%);
+        }
+        
+        .button-submit {
+            background-color: gray;
+            padding: 20px 24px;
+            cursor: pointer;
+            text-align: center;
+            color: black;
+        }
+        
+        .button-submit:hover {
+            /* background-color: green; */
+            color: blue;
+        }
+        
+        #more {
+            position: relative;
+            left: 250px;
+        }
+    </style>
+    <script>
+    </script>
+</head>
+
+<body>
+    <h1>Welcome to COVID-19 Info</h1>
+    <h2>Please choose your preferred Language</h2>
+
+    <div class="contianer">
+
+        <div class="button-container">
+
+            <div class="languageButton" id="korean" type="button" onclick="location.href='./index2.html'">Korean</div>
+            <div class="languageButton" id="amharic" type="button" onclick="location.href='./index2.html'">Amharic</div>
+            <div class="languageButton" id="german" type="button" onclick="location.href='./index2.html'">German</div>
+            <div class="languageButton" id="indian" type="button" onclick="location.href='./index2.html'">Hindi</div>
+            <div class="languageButton" id="Chinese" type="button" onclick="location.href='./index2.html'">Chinese</div>
+            <div class="languageButton" id="Portuguese" type="button" onclick="location.href='./index2.html'">Portugese</div>
+            <div class="languageButton" id="more" type="button" onclick="location.href='./index2.html'">More Languages</div>
+
+
+
+
+        </div>
+
+
+        <!-- <div class="container-submit">
+  
+   
+  <div class="button-submit" type="button">Submit</div>
+ 
+</div>
+
+</div>  <!-- end of outer container -->
+
+
+
+</body>
+
+</html>
