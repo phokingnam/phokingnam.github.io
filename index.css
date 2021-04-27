@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Raleway', sans-serif;
-    background: #fff;
+    background: white;
 }
 
 ul {
@@ -15,11 +15,11 @@ ul {
 
 a {
     text-decoration: none;
-    color: #000;
+    color: black;
 }
 
 hr {
-    width: 95vw;
+    width: 90vw;
     margin: 0 auto;
 }
 
@@ -58,7 +58,7 @@ img {
 }
 
 .top-news {
-    flex: 0 0 15%;
+    flex: 0 0 20%;
 }
 
 .navbar {
@@ -119,7 +119,7 @@ img {
 .latest-news span {
     display: block;
     font-family: 'Raleway', sans-serif;
-    font-weight: 300;
+    font-weight: 290;
     text-transform: uppercase;
 }
 
@@ -153,7 +153,7 @@ img {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
-    padding: 30px 30px;
+    padding: 35px 35px;
     margin-top: 8px;
 }
 
