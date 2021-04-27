@@ -4,6 +4,10 @@
 <head>
     <title>COVID-19 Info</title>
     <style type="text/css">
+        html {
+            background: #E6E6FA;
+        }
+        
         h1,
         .input1,
         .input2 {
@@ -24,16 +28,31 @@
             transform: translateX(150%);
         }
         
+        .container-backButton {
+            margin-top: 60px;
+            width: 25%;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            justify-items: start;
+            align-items: center;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateX(20%);
+        }
+        
+        .button-backButton,
         .button-submit {
-            background-color: gray;
+            background-color: #154b61;
             padding: 20px 24px;
             cursor: pointer;
             text-align: center;
-            color: black;
+            color: white;
         }
         
-        .button-submit:hover {
-            background-color: #154b61;
+        .button-submit:hover,
+        .button-backButton:hover {
+            background-color: gray;
         }
     </style>
 
@@ -41,15 +60,21 @@
 
 <body>
 
+
+
+    <div class="container-backButton">
+        <div class="button-backButton" type="button" onclick="location.href='./covidinfo.html'">Back</div>
+    </div>
+
     <h1>Please Enter Your Zip code or City</h1>
-    <!-- <p>My first paragraph.</p> -->
+
     <div class="input1">
 
         Zip Code:<input type="text" style="width:60px;" id="move" name="" placeholder="" maxlength="5">
 
     </div>
 
-    <!-- <h1>City</h1> -->
+
 
     <div class="input2">
 
@@ -57,10 +82,11 @@
 
     </div>
 
+
     <div class="container-submit">
 
 
-        <div class="button-submit" type="button">Submit</div>
+        <div class="button-submit" type="button" onclick="location.href='./index.html'">Submit</div>
 
     </div>
 

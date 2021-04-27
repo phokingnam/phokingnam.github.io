@@ -8,10 +8,95 @@
         h2 {
             text-align: center;
         }
+        /* layout styles */
+        
+        header#mainHeader {
+            height: 185px;
+        }
+        /*header styles*/
+        
+        header#mainHeader {
+            background: url(./images/covid_info.jpeg) no-repeat;
+            padding: 75px 0 0 245px;
+            position: relative;
+            border-bottom: 2px solid #7f7f7f;
+            margin-bottom: 1em;
+        }
+        
+        footer,
+        header {
+            display: block;
+        }
+        
+        body {
+            margin: 0 auto;
+            padding: 0 50px;
+            text-align: left;
+            position: relative;
+            background: white;
+            background-color: #E6E6FA;
+        }
+        
+        header#mainHeader h1 {
+            font-size: 3em;
+            color: black;
+            font-weight: absolute;
+            position: relative;
+            right: 145px;
+        }
+        
+        header#mainHeader p {
+            font-weight: normal;
+            color: black;
+            font-size: 1em;
+            position: relative;
+            left: 480px;
+        }
+        /*footer styles*/
+        
+        footer#pageFooter {
+            border-top: 2px solid #7f7f7f;
+            padding: 2em;
+            margin-top: 60px;
+        }
+        
+        footer#pageFooter div.leftCol {
+            float: left;
+            width: 600px;
+        }
+        
+        footer#pageFooter div.rightCol {
+            float: right;
+            width: 420px;
+            text-align: right;
+        }
+        
+        footer#pageFooter div.rightCol a {
+            color: #666;
+        }
+        
+        footer#pageFooter div.rightCol a:hover {
+            color: #952;
+        }
+        
+        footer#pageFooter p {
+            margin-bottom: 1em;
+            color: #666;
+        }
+        
+        footer#pageFooter small {
+            font-style: italic;
+        }
+        
+        footer#pageFooter {
+            clear: both;
+            overflow: auto;
+        }
         
         .button-container {
             width: 50%;
             display: grid;
+            margin-top: 60px;
             grid-template-columns: 1fr 1fr;
             gap: 10px;
             justify-items: stretch;
@@ -21,21 +106,17 @@
             transform: translateX(50%);
         }
         
-        body {
-            background-color: #fdfdfd;
-        }
-        
         .languageButton {
-            padding: 20px 24px;
+            padding: 20px 20px 20px 24px;
             cursor: pointer;
             text-align: center;
-            /*background-color: rgb(23, 3, 109);*/
             background-color: #154b61;
-            color: #fff;
+            color: white;
         }
         
         .languageButton:hover {
-            background-color: #455961;
+            background-color: gray;
+            text-color: white;
         }
         
         .container-submit {
@@ -60,13 +141,7 @@
         }
         
         .button-submit:hover {
-            /* background-color: green; */
-            color: blue;
-        }
-        
-        #more {
-            position: relative;
-            left: 250px;
+            background-color: green;
         }
     </style>
     <script>
@@ -74,20 +149,26 @@
 </head>
 
 <body>
-    <h1>Welcome to COVID-19 Info</h1>
-    <h2>Please choose your preferred Language</h2>
+
+    <header id="mainHeader">
+        <h1>Welcome to COVID-19 Info</h1>
+        <p>Your up-to-date COVID 19 information source</p>
+
+    </header>
+
+
+    <h1>Please Choose Your Preferred Language</h1>
 
     <div class="contianer">
 
         <div class="button-container">
 
-            <div class="languageButton" id="korean" type="button" onclick="location.href='./index2.html'">Korean</div>
-            <div class="languageButton" id="amharic" type="button" onclick="location.href='./index2.html'">Amharic</div>
-            <div class="languageButton" id="german" type="button" onclick="location.href='./index2.html'">German</div>
-            <div class="languageButton" id="indian" type="button" onclick="location.href='./index2.html'">Hindi</div>
-            <div class="languageButton" id="Chinese" type="button" onclick="location.href='./index2.html'">Chinese</div>
+            <div class="languageButton" id="korean" type="button" onclick="location.href='./index2.html'">Amharic</div>
+            <div class="languageButton" id="amharic" type="button" onclick="location.href='./index2.html'">Hindi</div>
+            <div class="languageButton" id="german" type="button" onclick="location.href='./index2.html'">Chinese</div>
+            <div class="languageButton" id="indian" type="button" onclick="location.href='./index2.html'">Korean</div>
+            <div class="languageButton" id="Chinese" type="button" onclick="location.href='./index2.html'">German</div>
             <div class="languageButton" id="Portuguese" type="button" onclick="location.href='./index2.html'">Portugese</div>
-            <div class="languageButton" id="more" type="button" onclick="location.href='./index2.html'">More Languages</div>
 
 
 
@@ -95,16 +176,19 @@
         </div>
 
 
-        <!-- <div class="container-submit">
-  
-   
-  <div class="button-submit" type="button">Submit</div>
- 
-</div>
+        <footer id="pageFooter">
+            <div class="rightCol">
 
-</div>  <!-- end of outer container -->
+                <p><a href="tel://773-732-1111" title="give us a call">T: 773-732-1111</a></p>
+                <p><a href="mailto:covidinfo@cget.org" title="drop us a line">covidinfo@cget.org</a></p>
+            </div>
+            <div class="leftCol">
 
+                <p><b>COVID-19 Info</b></p>
+                <p>121 N State St.<br> Chicago, IL 60640</p>
 
+            </div>
+        </footer>
 
 </body>
 
