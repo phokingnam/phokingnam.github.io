@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+body {
+  font-family: 'poppins';
+  background-image: 
+  url(https://assets.weforum.org/project/image/Yq_bCETuGQ-22ffFJ7bpuwSlW43DEKfcK-01oqeBCrc.jpeg);
+}
+
+.navbar {
+    background: rgba(255, 255, 255, 0.842);
+    padding: 1em;
+
+    .logo {
+        text-decoration: none;
+        font-weight: bold;
+        color: rgb(3, 91, 126);
+        font-size: .94em;
+    }
+
+    .container {
+        display: flex;
+        place-content: space-between;
+    }
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 5em 2em;
+}
+
+.leftcol {
+    text-align: center;
+}
+
+.left-col {
+    .lefthead {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: rgb(184, 180, 180);
+        letter-spacing: .3em;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        line-height: 1.3em;
+        margin-top: .2em;
+        color: whitesmoke;
+    }
+
+    .showData {
+        background: red;
+        color: white;
+        text-decoration: none;
+        padding: .6em 1.3em;
+        font-size: 1.4em;
+        border-radius: 4em;
+        font-weight: bold;
+        display: inline-block;
+    }
+}
+
+.rightcol {
+    text-align: center;
+}
+
+.right-col {
+    .righthead {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: rgb(184, 180, 180);
+        letter-spacing: .3em;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        line-height: 1.3em;
+        margin-top: .2em;
+        color: whitesmoke;
+    }
+
+    .EssLoc {
+        background: red;
+        color: white;
+        text-decoration: none;
+        padding: .6em 1.3em;
+        font-size: 1.4em;
+        border-radius: 4em;
+        font-weight: bold;
+        display: inline-block;
+    }
+}
+
+.BotLeftcol {
+    text-align: center;
+}
+
+.BotL-col {
+    .BotLhead {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: rgb(184, 180, 180);
+        letter-spacing: .3em;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        line-height: 1.3em;
+        margin-top: .2em;
+        color: whitesmoke;
+    }
+
+    .Media {
+        background: red;
+        color: white;
+        text-decoration: none;
+        padding: .6em 1.3em;
+        font-size: 1.4em;
+        border-radius: 4em;
+        font-weight: bold;
+        display: inline-block;
+    }
+}
+
+.BotRightcol {
+    text-align: center;
+}
+
+.BotR-col {
+    .BotRhead {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: rgb(184, 180, 180);
+        letter-spacing: .3em;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        line-height: 1.3em;
+        margin-top: .2em;
+        color: whitesmoke;
+    }
+
+    .HosLoc {
+        background: red;
+        color: white;
+        text-decoration: none;
+        padding: .6em 1.3em;
+        font-size: 1.4em;
+        border-radius: 4em;
+        font-weight: bold;
+        display: inline-block;
+    }
+}
+
+.navbar .container {
+    display: grid;
+     grid-template-columns: 180px auto;
+}
+
+.navbar nav {
+     display: flex;
+     justify-content: space-between;
+     background: none;
+     height: auto;
+     width: 100%;
+     padding: 0;
+}
+
+ul {
+    display: flex;
+}
+
+a {
+    color: black;
+    font-size: 1em;
+    padding: .1em 1em;
+}
+
+ul.TopLeft {
+    margin: 0;
+}
+
+li.Homepage a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+

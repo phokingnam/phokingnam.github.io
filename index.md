@@ -7,14 +7,41 @@
     <!-- Use mobile-aware viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="main.css">
-
-    <script src="script.js" async defer></script>
-
-
-
-    <!--testing google translator here-->
     <style>
-        html,
+        #google_translate_element {
+            position: relative;
+        }
+        #google_translate_element span {
+            display: none!important;
+        }
+        #google_translate_element:after {
+            content: "";
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: black;
+            position: absolute;
+            z-index: 1;
+            height: 40%;
+        }
+        #google_translate_element select {
+            padding: 0.3vw;
+            position: relative;
+            right: 600px;
+            width: 200%;
+        }
+        .goog-te-banner-frame.skiptranslate {
+            display: none!important;
+            visibility: hidden!important;
+        }
+    </style>
+
+  
+
+
+<!--testing google translator here-->
+<style>
+     html,
         /*body {
             min-height: 0!important;
             height: auto!important;
@@ -53,17 +80,18 @@
         }
     </style>
 
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
+<script type="text/javascript">
+    function googleTranslateElementInit() {
 
 
 
-            new google.translate.TranslateElement({
-                pageLanguage: "en"
+        new google.translate.TranslateElement({
+            pageLanguage: "en"
             }, "google_translate_element");
         };
     </script>
-
+<script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
     <script>
         function newPage() {
 
@@ -104,8 +132,6 @@
                         <li><a href="location.html">essential locations</a></li>
                     </ul>
                 </nav>
-
-
             </div>
             <div id="google_translate_element">
 
